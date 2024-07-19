@@ -6,6 +6,11 @@ defmodule Many.User do
     field :name, :string
     field :email, :string
 
+    many_to_many :book_reviews, Many.BookReview,
+      join_through: Many.Book,
+      unique: true,
+      on_replace: :delete
+
     timestamps(type: :utc_datetime)
   end
 

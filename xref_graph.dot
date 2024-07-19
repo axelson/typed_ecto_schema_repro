@@ -26,6 +26,8 @@ digraph "xref graph" {
   "lib/many/mailer.ex"
   "lib/many/repo.ex"
   "lib/many/user.ex"
+  "lib/many/user.ex" -> "lib/many/book.ex"
+  "lib/many/user.ex" -> "lib/many/book_review.ex"
   "lib/many_web.ex"
   "lib/many_web/components/core_components.ex"
   "lib/many_web/components/layouts.ex"

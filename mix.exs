@@ -32,6 +32,7 @@ defmodule Many.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:typed_ecto_schema, "~> 0.4.0", runtime: false},
       {:phoenix, "~> 1.7.14"},
       {:phoenix_ecto, "~> 4.5"},
       {:ecto_sql, "~> 3.10"},

@@ -1,8 +1,11 @@
 defmodule Many.User do
   use Ecto.Schema
   import Ecto.Changeset
+  import TypedEctoSchema
 
-  schema "users" do
+  # If you use a plain Ecto schema here there is no compile-time dep
+  # schema "users" do
+  typed_schema "users" do
     field :name, :string
     field :email, :string
 
